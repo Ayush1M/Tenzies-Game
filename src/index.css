@@ -78,14 +78,26 @@ main{
   .die-container{
     grid-template-columns: auto repeat(3, 1fr);
   }
+
+  .die-instruct{
+    margin-bottom: .6em;
+  }
+
+  .count{
+    margin-bottom: .6em;
+  }
 }
 
 @media(max-width: 400px){
   .die-container{
     grid-template-columns: auto repeat(2, 1fr);
   }
+
+  .die-instruct{
+    margin-bottom: .6em;
+  }
+
+  .count{
+    margin-bottom: .6em;
+  }
 }
-
-
-
-
