@@ -14,7 +14,7 @@ body{
 main{
   background-color: #fff;
   min-height: 80vh;
-  min-width: 400px;
+  min-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -65,6 +65,13 @@ main{
 
 .die-instruct{
   width: 60%;
+  margin: 0 auto;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+.tenzies{
+  width: 100%;
   margin: 0 auto;
   font-size: 1.4em;
   font-weight: 400;

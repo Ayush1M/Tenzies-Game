@@ -70,14 +70,14 @@ function App() {
       {tenzies && <Confetti />}
       <div className="die-content">
         <h1 className="die-heading">Tenzies</h1>
-        <p className="die-instruct">
+        {tenzies ? <h2 className="tenzies">Tenzies🎉🥳 </h2> : <p className="die-instruct">
           Roll until all the dice are same. Click each die to freeze it at its
-          current value.{" "}
-        </p>
+          current value.
+        </p>}
       </div>
-      <h3 className="count" onClick={rollDice}>
-        Count : {count}{" "}
-      </h3>
+      {tenzies && <h3 className="count" onClick={rollDice}>
+        You took {count} moves.😄
+      </h3>}
       <div className="die-container">{diceElements}</div>
       {tenzies ? (
         <button className="btn" onClick={resetGame}>
